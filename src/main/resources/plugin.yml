@@ -1,0 +1,12 @@
+name: FalseArmor
+main: de.falsedeveloping.falseArmor.Main
+version: 1.0.0
+api-version: 1.13
+author: FalseDeveloping
+description: Introducing Emerald Armor
+
+commands:
+  frecipe:
+    description: Öffnet das Rezept für das Angegebene Item
+  frecipes:
+    description: Zeigt eine Liste an verfügbaren Craftingrezepten
