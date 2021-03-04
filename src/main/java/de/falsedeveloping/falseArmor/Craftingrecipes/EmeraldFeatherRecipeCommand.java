@@ -39,6 +39,11 @@ public class EmeraldFeatherRecipeCommand implements CommandExecutor {
     ItemStack ing4;
     ItemStack ing5;
 
+    if(args.length < 1) {
+      p.sendMessage("§4Gib ein Rezept an! §3§l/frecipes");
+      return true;
+    }
+
     if (args[0].equalsIgnoreCase("emeraldfeather")) {
       ing1 = ItemStackBuilder.of(Material.AIR).build();
       ing2 = ItemStackBuilder.of(Material.EMERALD_BLOCK).build();

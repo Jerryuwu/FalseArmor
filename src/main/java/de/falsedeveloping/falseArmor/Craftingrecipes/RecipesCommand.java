@@ -16,13 +16,14 @@ public class RecipesCommand implements CommandExecutor {
       return true;
     }
     Player p = (Player) sender;
+    p.sendMessage("§4Benutze /frecipe [Rezept], um dir das Rezept anzuzeigen!");
     List<String> recipes = new ArrayList<>();
-    recipes.add("§aEmeraldFeather");
-    p.sendMessage("§b§lVerfügbare Craftingrezepte: ");
+    recipes.add("§aEmeraldfeather");
+    p.sendMessage("§b§lVerfügbare Rezepte: ");
     for (String i : recipes) {
       p.sendMessage(i);
     }
-    p.sendMessage("§4Benutze /frecipe [Rezept], um dir das Rezept anzuzeigen!");
+
     return true;
   }
 }

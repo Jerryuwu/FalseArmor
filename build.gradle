@@ -15,9 +15,12 @@ dependencies {
     compileOnly 'com.destroystokyo.paper:paper-api:1.16.4-R0.1-SNAPSHOT'
 }
 
-task copyPluginToTestserver(dependsOn: ['build'], type: Copy) {
+task copyPluginToTestserver(dependsOn: ['copyPluginToExport'], type: Copy) {
     from "${buildDir}/libs"
     into "C:\\Users\\jerom\\Desktop\\TestServer\\plugins"
+}
+task copyPluginToExport(dependsOn: ['build'], type: Copy) {
+    from "${buildDir}/libs"
     into "export"
 }
 compileJava {
